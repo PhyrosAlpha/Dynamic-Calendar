@@ -1,0 +1,18 @@
+@import '../base.scss';
+
+td {
+    position:relative;
+    color: $primary-color;
+    font-weight:600;
+    text-align: center;
+    padding: 10px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s;
+
+    &:hover {
+        color: white;
+        background-color: $secondary-color;
+    }
+}
+

@@ -1,0 +1,51 @@
+@import './base.scss';
+
+.calendar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    padding:5px;
+    border: $secondary-color solid 4px ;
+    background-color: $tertiary-color;
+    
+    .calendar-date-display {
+        display:flex;
+        justify-content: space-between;
+        color:$primary-color;
+        margin-bottom: 10px;
+
+        h3 {
+            padding:0 8px;
+        }
+
+        img {
+            color: $secondary-color;
+            width:30px
+        }
+        i {
+            color: $secondary-color;
+            width:30px
+        }
+
+    }
+
+    .calendar-area-days {
+        table{
+            thead{
+                tr{
+                    th{
+                        &:first-child{
+                            color:red;
+                        }
+                        color:$primary-color;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
